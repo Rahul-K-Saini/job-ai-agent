@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#f6f7fb">
+    <title>Sign in · Jobdesk</title>
+    <link rel="stylesheet" href="/styles.css">
+    <script src="/login.js" defer></script>
+  </head>
+  <body class="login-page">
+    <main class="login-card">
+      <a class="brand login-brand" href="/" aria-label="Jobdesk">
+        <span class="brand-mark">J</span>
+        <span><strong>jobdesk</strong><small>PERSONAL WORKSPACE</small></span>
+      </a>
+      <p class="eyebrow">PRIVATE JOB SEARCH</p>
+      <h1>Welcome back</h1>
+      <p class="subtitle">Sign in to access your personal job dashboard.</p>
+      <form id="login-form">
+        <label for="username">Username</label>
+        <input id="username" name="username" autocomplete="username" required>
+        <label for="password">Password</label>
+        <input id="password" name="password" type="password" autocomplete="current-password" required>
+        <p class="login-error hidden" id="login-error" role="alert"></p>
+        <button class="button primary login-button" type="submit">Sign in <span>→</span></button>
+      </form>
+      <p class="login-private"><span class="local-indicator"></span> Private dashboard · available only to authorized users</p>
+    </main>
+  </body>
+</html>
